@@ -82,7 +82,7 @@ const colorArray1 = colorOptions.slice(0, 4);
 
 ReactDOM.render(
   <ProductConfig colorOptions={colorArray1}>
-    {function(colorOptions, { colorChoice, zoom }, handleColor, handleZoom) {
+    {function({ colorChoice, zoom }) {
       return (
         <div className="product-container wrap-reverse" style={{ background: "#f1f2f0" }}>
           <Canvas colors={colorChoice} zoom={zoom} />
@@ -98,8 +98,8 @@ ReactDOM.render(
               acomplishment, or your reminder to keep training for your next
               race.
             </p>
-            <ProductConfig.Color colorOptions={colorOptions} colorChoice={colorChoice} handleColor={handleColor} />
-            <ProductConfig.Zoom zoom={zoom} handleZoom={handleZoom} colorChoice={colorChoice} />
+            <ProductConfig.Color />
+            <ProductConfig.Zoom />
           </div>
         </div>
       );
