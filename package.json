@@ -12,7 +12,7 @@
     "react": "^16.7.0-alpha",
     "react-app-polyfill": "^1.0.1",
     "react-dom": "^16.7.0-alpha",
-    "react-scripts": "^3.0.1"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "predeploy": "npm run build",
